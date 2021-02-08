@@ -19,5 +19,5 @@ cd go-ethereum
 sudo apt install make golang-go
 make geth
 
-./build/bin/geth --syncmode fast --cache 26000
+./build/bin/geth --syncmode fast --cache 26000 --rpc --rpcaddr 127.0.0.1 --rpcapi eth,web3,debug
 
