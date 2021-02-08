@@ -1,0 +1,23 @@
+<pre>
+Create a 600GB storage optimized digital ocean droplet (32 GB ram, 4 CPU)
+
+<hr>
+Create a user:
+
+adduser goku
+sudo visudo
+# goku ALL=(ALL) NOPASSWD:ALL
+
+su goku
+cd ~/
+mkdir ~/.ssh
+cat > ~/.ssh/authorized_keys
+
+wget https://raw.githubusercontent.com/geohot/configuration/master/.tmux.conf
+git clone https://github.com/geohot/go-ethereum.git -b cheapeth
+cd go-ethereum
+sudo apt install make golang-go
+make geth
+
+./build/bin/geth --syncmode fast --cache 26000
+
