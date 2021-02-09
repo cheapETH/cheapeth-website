@@ -4,20 +4,26 @@ body {
     color: white;
     text-align: center;
     font-family: monospace;
+    line-height: 1.5em;
+    margin: 16px;
 }
 
 p {
     margin: 16px;
 }
 
+h1, h2, h3 {
+    line-height: 1.3em;
+}
+
 a {
-   color: rgb(0, 168, 0); 
+    color: rgb(0, 168, 0); 
 }
 a:hover {
-   color: rgb(0, 207, 0); 
+    color: rgb(0, 207, 0); 
 }
 a:active {
-   color: rgb(136, 219, 136); 
+    color: rgb(136, 219, 136); 
 }
 
 img.sm {
@@ -50,12 +56,6 @@ img.sm {
 
 #setup {
     text-align: left;
-}
-
-@media only screen and (max-width: 800px) {
-    body {
-        margin: 15px;
-    }
 }
 
 @media only screen and (min-width: 800px) {
