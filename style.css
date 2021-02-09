@@ -52,11 +52,14 @@ img.sm {
     text-align: left;
 }
 
+@media only screen and (max-width: 800px) {
+    body {
+        margin: 15px;
+    }
+}
+
 @media only screen and (min-width: 800px) {
     .landing {
         height: 100vmin;
-    }
-    body {
-        margin: 15px;
     }
 }
