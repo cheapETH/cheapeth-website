@@ -1,52 +1,29 @@
-
-
 body {
-    width: 100%;
     margin: 0;
     background-color: #2d2d2d;
     color: white;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    /* display: flexbox; */
-    overflow-wrap: break-word;
-    overflow: scroll;
-    text-overflow: clip;
-    word-wrap: break-word
+    font-family: monospace;
+    line-height: 1.5em;
+    margin: 16px;
+}
 
+p {
+    margin: 16px;
 }
-@media only screen and (max-width: 800px) {
-    body{
-        padding: 15px;
-    }
+
+h1, h2, h3 {
+    line-height: 1.3em;
 }
+
 a {
-   color:rgb(0, 168, 0); 
+    color: rgb(0, 168, 0); 
 }
 a:hover {
-   color:rgb(0, 207, 0); 
+    color: rgb(0, 207, 0); 
 }
-a:active{
-   color:rgb(136, 219, 136); 
-}
-
-.emphasize{
-    color: green;
-    font-size: 24px;
-}
-
-.integration-img{
-    display:flex;
-    justify-content: center;
-    align-content: center;
-    padding: 1;
-    background-color: black;
-    overflow: auto;
-}
-
-@media only screen and (max-width: 800px) {
-    .integration-img {
-        display:flex;
-    }
+a:active {
+    color: rgb(136, 219, 136); 
 }
 
 img.sm {
@@ -54,11 +31,18 @@ img.sm {
     padding: 2.5;
 }
 
+.emphasize {
+    color: green;
+    font-size: 24px;
+}
 
-@media only screen and (min-width: 800px) {
-    .landing{
-        height: 100vmin;
-    }
+.integration-img {
+    display: flex;
+    margin: 16px;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    overflow: auto;
 }
 
 .arrow {
@@ -68,4 +52,14 @@ img.sm {
     padding: 10px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+}
+
+#setup {
+    text-align: left;
+}
+
+@media only screen and (min-width: 800px) {
+    .landing {
+        height: 100vmin;
+    }
 }
