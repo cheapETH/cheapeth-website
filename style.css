@@ -19,3 +19,8 @@ a:active{
     color: green;
     font-size: 24px;
 }
+
+img.sm {
+  width: 200px;
+  padding: 5px;
+}
