@@ -1,0 +1,21 @@
+body {
+    background-color: #2d2d2d;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+   color:rgb(0, 168, 0); 
+}
+a:hover {
+   color:rgb(0, 207, 0); 
+}
+a:active{
+   color:rgb(136, 219, 136); 
+}
+
+.emphasize{
+    color: green;
+    font-size: 24px;
+}
