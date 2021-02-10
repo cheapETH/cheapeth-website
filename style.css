@@ -14,11 +14,23 @@ body {
     line-height: 1.5em;
 }
 
+
 .landing{
     height: 100vh;
     background-image: radial-gradient(circle, #472525, #371d1f, #261619, #180e10, #000000);
 }
+.header{
+    padding: 10px;
+}
+ul{
+    list-style-type: square;
+    list-style-position: inside;
+}
 
+hr{
+    border-top: 2px solid var(--main-accent-color);
+    width:75%
+}
 
 p {
     margin: 16px;
@@ -82,6 +94,11 @@ img.sm {
 #setup {
     text-align: left;
 }
+@media only screen and (max-width: 800px) {
+    hr {
+        width:95%
+    }
+}
 
 @media only screen and (min-width: 800px) {
     #arrow {
@@ -90,4 +107,10 @@ img.sm {
     .landing {
         height: 100vmin;
     }
+}
+
+
+.tutorial{
+    text-align: left;
+    display: inline-block;
 }
