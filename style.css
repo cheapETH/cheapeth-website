@@ -7,17 +7,20 @@ body {
     color: white;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    /* display: flexbox; */
-    overflow-wrap: break-word;
-    overflow: scroll;
-    text-overflow: clip;
-    word-wrap: break-word
-
 }
 @media only screen and (max-width: 800px) {
     body{
         padding: 15px;
     }
+}
+p{
+    width: 100%;
+    overflow: auto;
+    text-overflow: unset;
+    white-space: ;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
 }
 a {
    color:rgb(0, 168, 0); 
@@ -61,7 +64,7 @@ img.sm {
     }
 }
 
-.arrow {
+#arrow {
     border: solid white;
     border-width: 0 10px 10px 0;
     display: inline-block;
