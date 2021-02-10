@@ -34,9 +34,15 @@ make geth
 
 ./build/bin/geth --syncmode fast --cache 26000 --rpc --rpcaddr 127.0.0.1 --rpcapi eth,web3,debug,net --rpcvhosts=*
 
-# setup nginx
+# for miner (in new window)
+geth attach
+> personal.newAccount()
+> miner.start()
+
+# for RPC server, setup nginx
 sudo apt-get install nginx
 https://www.nginx.com/resources/wiki/start/topics/recipes/geth/
+
 
 </pre>
 </body>
