@@ -20,12 +20,6 @@ body {
 }
 
 
-@media only screen and (min-width: 800px) {
-    .landing {
-        height: 100vmin;
-    }
-}
-
 p {
     margin: 16px;
 }
@@ -65,7 +59,7 @@ img.sm {
 #arrow {
     border: solid var(--main-accent-color);
     border-width: 0 10px 10px 0;
-    display: inline-block;
+    display: none;
     padding: 10px;
 
     transform: rotate(45deg);
@@ -79,6 +73,21 @@ img.sm {
 }
 
 
+#logo {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+
 #setup {
     text-align: left;
+}
+
+@media only screen and (min-width: 800px) {
+    #arrow {
+         display: inline-block;
+    }
+    .landing {
+        height: 100vmin;
+    }
 }
