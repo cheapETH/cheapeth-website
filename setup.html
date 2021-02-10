@@ -10,40 +10,77 @@
 </head>
 
 <body>
-<pre id="setup">
 
-Create a 600GB storage optimized digital ocean droplet (32 GB ram, 4 CPU)
+    <div id="menu">
+        <a href="index.html"><img src="./images/logo.png"></a>
+        <h2>How To Setup</h2>
+        <p></p>
+    </div>
+
+    <hr />
+
+<div id="setup-container">
+    <ol>
+        <li>Create a 600GB storage optimized digital ocean droplet (32 GB ram, 4 CPU)</li>
+        <li>Create a user:</br>
+            <mark>
+            adduser goku</br>
+            sudo visudo</br>
+            # goku ALL=(ALL) NOPASSWD:ALL </mark>
+        </li>
+        <li><mark>su goku</br>
+            cd ~/</br>
+            mkdir ~/.ssh</br>
+            cat &gt; ~/.ssh/authorized_keys</mark>
+        </li>
+        <li><mark>wget https://raw.githubusercontent.com/geohot/configuration/master/.tmux.conf</br>
+            git clone https://github.com/geohot/go-ethereum.git -b cheapeth</br>
+            cd go-ethereum</br>
+            sudo apt install make golang-go</br>
+            make geth</mark>
+        </li>
+        <li><mark>./build/bin/geth --syncmode fast --cache 26000 --rpc --rpcaddr 127.0.0.1 --rpcapi eth,web3,debug,net --rpcvhosts=*</mark></li>
+    </ol>
+
+
+</div>
 
 <hr />
-Create a user:
 
-adduser goku
-sudo visudo
-# goku ALL=(ALL) NOPASSWD:ALL
+<div id="setup-container">
+    <ul>
+        <li>
+            <strong>For miner (in new window)</strong></br>
+            <mark>geth attach</br>
+            > personal.newAccount()</br>
+            > miner.start()</mark>
+        </li>
+        <li>
+            <strong>For RPC server, setup nginx</strong></br>
+            <mark>sudo apt-get install nginx</mark></br>
+            <a>https://www.nginx.com/resources/wiki/start/topics/recipes/geth/</a>
+        </li>
+    </ul>
+</div>
 
-su goku
-cd ~/
-mkdir ~/.ssh
-cat &gt; ~/.ssh/authorized_keys
+<hr />
+<h3>The Team</h3>
+<p>
+From some of the team that brought you <a href="https://messari.io/asset/bitcoin-ocho/profile">bitcoin OCHO</a><br />
+A Goku1997 project.
 
-wget https://raw.githubusercontent.com/geohot/configuration/master/.tmux.conf
-git clone https://github.com/geohot/go-ethereum.git -b cheapeth
-cd go-ethereum
-sudo apt install make golang-go
-make geth
-
-./build/bin/geth --syncmode fast --cache 26000 --rpc --rpcaddr 127.0.0.1 --rpcapi eth,web3,debug,net --rpcvhosts=*
-
-# for miner (in new window)
-geth attach
-> personal.newAccount()
-> miner.start()
-
-# for RPC server, setup nginx
-sudo apt-get install nginx
-https://www.nginx.com/resources/wiki/start/topics/recipes/geth/
+&#169 2020 THE CHEAP ETHEREUM FOUNDATION
+</p>
 
 
-</pre>
+
+
+
+
+
+
+
+
+
 </body>
 </html>
