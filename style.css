@@ -48,10 +48,16 @@ img.sm {
 .arrow {
     border: solid white;
     border-width: 0 10px 10px 0;
-    display: inline-block;
+    display: none;
     padding: 10px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+}
+
+#logo {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
 }
 
 #setup {
@@ -59,6 +65,9 @@ img.sm {
 }
 
 @media only screen and (min-width: 800px) {
+    .arrow {
+         display: inline-block;
+    }
     .landing {
         height: 100vmin;
     }
