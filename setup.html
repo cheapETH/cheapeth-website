@@ -43,6 +43,11 @@ geth attach
 > personal.newAccount()
 > miner.start()
 
+# for GPU miner (after chain is synced)
+# download ethminer
+ethminer -G -P http://127.0.0.1:8545/
+# or if you have friend with chain you can use their ip
+
 # for RPC server, setup nginx
 sudo apt-get install nginx
 https://www.nginx.com/resources/wiki/start/topics/recipes/geth/
