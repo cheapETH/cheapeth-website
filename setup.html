@@ -12,6 +12,8 @@
 <body>
 <pre id="setup">
 
+Instructions for node setup
+
 Create a 600GB storage optimized digital ocean droplet (32 GB ram, 4 CPU)
 
 <hr />
@@ -32,9 +34,11 @@ cd go-ethereum
 sudo apt install make golang-go
 make geth
 
-./build/bin/geth --syncmode fast --cache 26000 --rpc --rpcaddr 127.0.0.1 --rpcapi eth,web3,debug,net --rpcvhosts=* --networkid 777
+./build/bin/geth --syncmode fast --cache 26000 --rpc --rpcaddr 127.0.0.1 --rpcapi eth,web3,debug,net --rpcvhosts=* --networkid 777 --mine
 
 # for miner (in new window)
+# WARNING: CPU MINER NOT GOOD ANYMORE
+# USE GPU MINER
 geth attach
 > personal.newAccount()
 > miner.start()
