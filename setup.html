@@ -32,7 +32,7 @@ cd go-ethereum
 sudo apt install make golang-go
 make geth
 
-./build/bin/geth --syncmode fast --cache 26000 --rpc --rpcaddr 127.0.0.1 --rpcapi eth,web3,debug,net --rpcvhosts=*
+./build/bin/geth --syncmode fast --cache 26000 --rpc --rpcaddr 127.0.0.1 --rpcapi eth,web3,debug,net --rpcvhosts=* --networkid 777
 
 # for miner (in new window)
 geth attach
