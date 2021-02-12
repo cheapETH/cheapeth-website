@@ -1,223 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favico.ico" type="image/x-icon">
-    <title>cheapETH</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="icon" type="image/ico" href="images/favicon.ico" />
+<script src="scripts.js"></script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="You like ethereum? You wish you could use it, BUT TRANSACTIONS ARE 100 FUCKING DOLLARS?!? You need cheapETH. It's 100% compatible with eth, except 1000x cheaper!!*" />
+<title>cheapETH</title>
 </head>
+
 <body>
-    <header>
-        <div class="navbar">
-            <div class="navbar--wrapper">
-                <div class="navbar--logo">
-                    <img class="navbar--img"src="images/navbar--logo.svg"> 
-                    <div class="navbar--text">cheapETH</div>
-                </div>
-            </div>
-        </div>
-    </header>
+<div class="landing">
+<div class="header">
+<a href="setup.html">Mining Guide</a>
+<a href="metamask.html">Wallet setup</a>
+<a href="https://cheapswap.io">CheapSwap</a>
+</div>
+<img id="logo" src=images/logo.png />
 
-    <main>
-        <div class="hero">
-            <div class="hero--wrapper">
-                <h1 class="hero--h1 --text-logo">cheapETH<img class="--text-logo-img" src="images/text-logo.svg"></h1>
-                <p class="hero--p">
-                    You like ethereum? You wish you could use it, but transaction are 100 fucking dollars?<br>
-                    You need <span class="--medium">cheapETH</span>. It's 100% compatible with ETH, except 1000x cheaper!*<br>
-                    If you have ETH, you already have<span class="--medium"> cheapETH</span>!
-                </p>
-                <div class="hero--socials">
-                    <a href="https://github.com/geohot/go-ethereum/tree/cheapeth" class="hero--social --btn"><img class="--icon" src="images/social/github.svg">Github</a>
-                    <a href="https://discord.gg/RjAVR6M9Sw" class="hero--social --btn"><img class="--icon" src="images/social/discord.svg">Discord</a>
-                    <!--
-                        <a href="#" class="hero--social --btn"><img class="--icon" src="images/social/twitter.svg">Twitter</a>
-                        <a href="#" class="hero--social --btn"><img class="--icon" src="images/social/reddit.svg">Reddit</a>
-                    -->
-                </div>
-                <div class="hero--links">
-                    <a href="https://expedition.dev/?rpcUrl=https://node.cheapeth.org/rpc" class="hero--link --link">Block explorer</a>
-                    <a href="https://cheapswap.io/" class="hero--link --link">cheapSwap</a>
-                </div>
-            </div>
-        </div>
-        <div class="why-cheapeth">
-            <div class="why-cheapeth--box">
-                <div class="why-cheapeth--wrapper">
-                    <div class="why-cheapeth--copy">
-                        <h1 class="why-cheapeth--h1 --text-logo">Why cheapETH<img class="--text-logo-img" src="images/text-logo.svg"></h1>
-                        <p class ="why-cheapeth--p">
-                            So aside from the fact that ETH is too expensive for normal people to use, span.<span class="--medium"> cheapETH</span> can serve many purposes.
-                        </p>
-                        <p class ="why-cheapeth--p">
-                            Testnets suffer from this problem of valueless currency. You don't want valueless, since DDOS is free. Cheap is better than free.<br>
-                            Testnets also lack a rich ecosystem of contracts.<br>
-                           <span class="--medium"> cheapETH</span> also has cheapSNX, cheapDAI, and even cheapBAT. All is cheap on<span class="--medium"> cheapETH</span>.
-                        </p>
-                        <p class ="why-cheapeth--p">                        
-                            You test in prod on<span class="--medium"> cheapETH</span>.<br>
-                            You can be a little guy on<span class="--medium"> cheapETH</span>.<br>
-                            This is not a whalechain, unlike other ETHs.
-                        </p>
-                    </div>
-                    <div class="why-cheapeth--image">
-                        <img src="images/why-cheapeth--image.svg">
-                    </div>
-                </div>
-            </div>
-            <div class="why-cheapeth--wrapper">
-                <p class ="why-cheapeth--p">    
-                    Think about it. A transaction that costs $77 on ETH, is only $0.08 on<span class="--medium"> cheapETH</span>. Made possible by cheapgas.<br>
-                    The<span class="--medium"> cheapETH</span> gang solves the gas crisis.<br>
-                    
-                    <i>*Imagine a 100% compatible car with your car that's 1000x cheaper. Or even a cup of coffee. You'll be living like a king in no time.</i>
-                </p>
-            </div>
-        </div>
-        <div class="how-to-get-it">
-            <div class="how-to-get-it--wrapper">
-                <h1 class="how-to-get-it--h1"><span>How to get it</span></h1>
-                <p class="how-to-get-it--p">
-                    If you had ETH in block 11818959, you have<span class="--medium"> cheapETH</span>! A 1 to 1 ratio of course. <br>
-                    You'll also be able to buy<span class="--medium"> cheapETH</span> in the crowd sale, 1 ETH for 1000<span class="--medium"> cheapETH</span>. <br>
-                </p>
-                <p class="how-to-get-it--p">
-                    Breakdown: <br>
-                    • 80% to existing ETH holders <br>
-                    • 10% in<span class="--medium"> cheapETH</span> crowdsale <br>
-                    • 10% held to fund maintaining and upgrading<span class="--medium"> cheapETH</span> and pay our developers
-                </p>
+<br />
+<h3>You like ethereum? You wish you could use it, BUT TRANSACTIONS ARE <span class="emphasize">100</span> FUCKING DOLLARS?!?</h3>
+<h3>You need cheapETH. It's 100% compatible with eth, except <span class="emphasize">1000x</span> cheaper!!*</h3>
+<h3>If you have ETH, you already have cheapETH!</h3>
+<h3><a href="https://discord.gg/RjAVR6M9Sw">Join the discord</a> for free cheapETH.<br /></h3>
+<i id="arrow"></i>
+</div>
 
-                <div class="how-to-get-it--codebox">
-                    <div class="how-to-get-it--code">
-                        <span class="--black">cheapETH is now live on Metamask, just add the network</span><br>
-                        <br>
-                        Network name: <span class="--green">cheapETH</span><br>
-                        New RPC Url: <span class="--blue">https://node.cheapeth.org/rpc</span><br>
-                        Chain ID: <span class="--orange">777</span><br>
-                        Currency symbol: <span class="--green">cTH</span><br>
-                    </div>
-                </div>
-                <p class="how-to-get-it--p">
-                    Think about it. A transaction that costs $77 on ETH, is only $0.08 on<span class="--medium"> cheapETH</span>. Made possible by cheapgas.<br>
-                    The<span class="--medium"> cheapETH</span> gang solves the gas crisis.
-                </p>
+<h2>LIVE NOW ON METAMASK (just add network)</h2>
+<h2>
+Network Name: cheapETH<br />
+New RPC URL: https://node.cheapeth.org/rpc<br />
+Chain ID: 777<br />
+Currency Symbol: cTH<br />
+</h2>
 
-                <p class="how-to-get-it--p">
-                    <i>*Imagine a 100% compatible car with your car that's 1000x cheaper. Or even a cup of coffee. You'll be living like a king in no time.</i>
-                </p>
-            </div>
-        </div>
-        <div class="setup">
-            <div class="setup--wrapper">
-                <h1 class="setup--h1"><span>Setup</span></h1>
-                <p class="setup--p">
-                    Create a 600GB storage optimized digital ocean droplet (32 GB ram, 4 CPU)
-                </p>
-                <div class="setup--instruction">
-                    <div class="setup--description">
-                        Create a new user
-                    </div>
-                    <div class="setup--codebox">
-                        <div class="setup--code">
-                            adduser goku<br>
-                            sudo visudo<br>
-                            # goku ALL=(ALL) NOPASSWD:ALL
-                        </div>
-                    </div>
-                </div>
-                <div class="setup--instruction">
-                    <div class="setup--description">
-                        <!---->    
-                    </div>
+<br />
+<p>
 
-                    <div class="setup--codebox">
-                        <div class="setup--code">
-                            su goku<br>
-                            cd ~/<br>
-                            mkdir ~/.ssh<br>
-                            cat > ~/.ssh/authorized_keys
-                        </div>
-                    </div>
-                </div>
-                <div class="setup--instruction">
-                    <div class="setup--description">
-                        <!---->    
-                    </div>
+<a href="https://expedition.dev/?rpcUrl=https://node.cheapeth.org/rpc">Block Explorer</a>
+<a href="https://cheapswap.io">CheapSwap</a>
+</p>
 
-                    <div class="setup--codebox">
-                        <div class="setup--code">
-                            wget https://raw.githubusercontent.com/geohot/configuration/master/.tmux.conf<br>
-                            git clone https://github.com/geohot/go-ethereum.git -b cheapeth<br>
-                            cd go-ethereum<br>
-                            sudo apt install make golang-go<br>
-                            make geth
-                        </div>
-                    </div>
-                </div>
-                <div class="setup--instruction">
-                    <div class="setup--description">
-                        <!---->    
-                    </div>
+<hr />
+<p id="info">
+Think about it. A transaction that costs $77 on ETH, is only $0.08 on cheapETH. Made possible by cheapgas.<br />
+The cheap eth gang solves the gas crisis.<br />
+* Imagine a 100% compatible car with your car that's 1000x cheaper. Or even a cup of coffee. You'll be living like a king in no time.<br />
+</p>
 
-                    <div class="setup--codebox">
-                        <div class="setup--code">
-                            ./build/bin/geth --syncmode fast --cache 26000 --rpc --rpcaddr 127.0.0.1 --rpcapi eth,web3,debug,net --rpcvhosts=* --networkid 777 --mine
-                        </div>
-                    </div>
-                </div>
-                <div class="setup--instruction">
-                    <div class="setup--description">
-                        For miner (in new window)<br>
-                        WARNING: CPU miner not good anymore use GPU miner    
-                    </div>
+<hr />
+<h3>How to get cheapETH</h3>
+<p>
+If you had ETH in block 11818959, you have cheapETH! A 1 to 1 ratio of course.<br />
+You'll also be able to buy cheapETH in the crowd sale, 1 ETH for 1000 cheapETH.<br />
+Breakdown:
+</p>
+<ul>
+<li>80% to existing ETH holders</li>
+<li>10% in cheapETH crowdsale</li>
+<li>10% held to fund maintaining and upgrading cheapETH and pay our developers</li>
+</ul>
+<p>
+You can also mine cheapETH, just like normal eth. Except it's easier, because it's cheap.
+</p>
 
-                    <div class="setup--codebox">
-                        <div class="setup--code">
-                            geth attach<br>
-                            > personal.newAccount()<br>
-                            > miner.start()
-                        </div>
-                    </div>
-                </div>
-                <div class="setup--instruction">
-                    <div class="setup--description">
-                        For GPU miner (after chain is synced)<br>
-                        download ethminer<br>
-                        or if you have friend with chain you can use their ip
-                    </div>
+<hr />
+<h3>CheapETH market cap</h3>
+<p>
+If ethereum has a market cap of $186 billion, cheapETH has a market cap of $186 million.
+</p>
 
-                    <div class="setup--codebox">
-                        <div class="setup--code">
-                            ethminer -G -P http://127.0.0.1:8545/
-                        </div>
-                    </div>
-                </div>
-                <div class="setup--instruction">
-                    <div class="setup--description">
-                        For RPC server, setup nginx
-                    </div>
+<hr />
+<h3>Why cheapETH?</h3>
+<p>
+So aside from the fact that ETH is too expensive for normal people to use, cheapETH can serve many purposes.<br />
+<br />
+Testnets suffer from this problem of valueless currency. You don't want valueless, since DDOS is free. Cheap is better than free.<br />
+Testnets also lack a rich ecosystem of contracts. cheapETH also has cheapSNX, cheapDAI, and even cheapBAT. All is cheap on cheapETH.<br /><br/>
 
-                    <div class="setup--codebox">
-                        <div class="setup--code">
-                            sudo apt-get install nginx<br>
-                            https://www.nginx.com/resources/wiki/start/topics/recipes/geth/
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+You test in prod on cheapETH.<br/>
+You can be a little guy on cheapETH. This is not a whalechain, unlike other eths<br/>
+</p>
 
-    <footer>
-        <div class="footer">
-            <div class="footer--wrapper">
-                The team<br>
-                From some of the team that brought you <a class="--link" href="https://messari.io/asset/bitcoin-ocho/profile">bitcoin OCHO</a><br>
-                A Goku1997 project. ©2021 THE CHEAP ETHEREUM FOUNDATION
-            </div>
-        </div>
-    </footer>
+<hr />
+<h3>Wait, how much is a cheapDAI worth?</h3>
+<p>
+That's a great question. I see an argument for a tenth of a cent, and I also see an argument for $1.00. The market can decide!
+</p>
+
+<hr />
+<h3>How to join the cheapETH movement</h3>
+<p>
+<a href="https://discord.gg/RjAVR6M9Sw">Join the discord</a><br />
+<a href="https://github.com/geohot/go-ethereum/tree/cheapeth">See the code</a> (we hired geohot to write it)<br />
+geth node coming soon, early setup <a href="setup.html">instructions here</a><br />
+RPC URL will be https://node.cheapeth.org/rpc
+</p>
+
+<hr />
+<h3>The Team</h3>
+<p>
+From some of the team that brought you <a href="https://messari.io/asset/bitcoin-ocho/profile">bitcoin OCHO</a><br />
+A Goku1997 project.
+<div>
+&copy;
+<span id="copyright">
+<script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+</span>
+THE CHEAP ETHEREUM FOUNDATION
+</div>
+</p>
+
 </body>
 </html>
