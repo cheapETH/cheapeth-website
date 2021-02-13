@@ -10,7 +10,7 @@ body {
     background-color: #2b2b2b;
     color: white;
     text-align: center;
-    font-family: monospace;
+    font-family: "Roboto Mono";
     line-height: 1.5em;
 }
 
@@ -28,8 +28,10 @@ ul{
 }
 
 hr{
-    border-top: 2px solid var(--main-accent-color);
-    width:75%
+    margin-left: 10%;
+    /*margin: auto;*/
+    border-top: 4px solid var(--main-accent-color);
+    width:80%
 }
 
 p {
@@ -68,11 +70,17 @@ img.sm {
     overflow: auto;
 }
 
+.accordion-item {
+    color: red;
+}
+
 #arrow {
     border: solid var(--main-accent-color);
     border-width: 0 10px 10px 0;
     display: none;
     padding: 10px;
+    position: absolute;
+    top: 90%;
 
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -97,6 +105,7 @@ img.sm {
 @media only screen and (max-width: 800px) {
     hr {
         width:95%
+  4     heigh: 2px;
     }
 }
 
