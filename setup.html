@@ -1,58 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="style.css" />
-<link rel="icon" type="image/ico" href="images/favicon.ico" />
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="You like ethereum? You wish you could use it, BUT TRANSACTIONS ARE 100 FUCKING DOLLARS?!? You need cheapETH. It's 100% compatible with eth, except 1000x cheaper!!*" />
-<title>cheapETH | Setup</title>
-</head>
-
-<body>
-<pre id="setup">
-
-Instructions for node setup
-
-Create a 600GB storage optimized digital ocean droplet (32 GB ram, 4 CPU)
-
-<hr />
-Create a user:
-
-adduser goku
-sudo visudo
-# goku ALL=(ALL) NOPASSWD:ALL
-
-su goku
-cd ~/
-mkdir ~/.ssh
-cat &gt; ~/.ssh/authorized_keys
-
-wget https://raw.githubusercontent.com/geohot/configuration/master/.tmux.conf
-git clone https://github.com/geohot/go-ethereum.git -b cheapeth
-cd go-ethereum
-sudo apt install make golang-go
-make geth
-
-./build/bin/geth --syncmode fast --cache 26000 --rpc --rpcaddr 127.0.0.1 --rpcapi eth,web3,debug,net --rpcvhosts=* --networkid 777 --mine
-
-# for miner (in new window)
-# WARNING: CPU MINER NOT GOOD ANYMORE
-# USE GPU MINER
-geth attach
-> personal.newAccount()
-> miner.start()
-
-# for GPU miner (after chain is synced)
-# download ethminer
-ethminer -G -P http://127.0.0.1:8545/
-# or if you have friend with chain you can use their ip
-
-# for RPC server, setup nginx
-sudo apt-get install nginx
-https://www.nginx.com/resources/wiki/start/topics/recipes/geth/
-
-
-</pre>
-</body>
+	<head>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="icon" type="image/ico" href="images/favicon.ico" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="You like ethereum? You wish you could use it, BUT TRANSACTIONS ARE 100 FUCKING DOLLARS?!? You need cheapETH. It's 100% compatible with eth, except 1000x cheaper!!*" />
+		<title>cheapETH | Setup</title>
+	</head>
+	<body>
+		<pre id="setup">
+			Instructions for node setup
+			Create a 600GB storage optimized digital ocean droplet (32 GB ram, 4 CPU)
+			<hr />
+			Create a user:
+			adduser goku
+			sudo visudo
+			# goku ALL=(ALL) NOPASSWD:ALL
+			su goku
+			cd ~/
+			mkdir ~/.ssh
+			cat &gt; ~/.ssh/authorized_keys
+			wget https://raw.githubusercontent.com/geohot/configuration/master/.tmux.conf
+			git clone https://github.com/geohot/go-ethereum.git -b cheapeth
+			cd go-ethereum
+			sudo apt install make golang-go
+			make geth
+			./build/bin/geth --syncmode fast --cache 26000 --rpc --rpcaddr 127.0.0.1 --rpcapi eth,web3,debug,net --rpcvhosts=* --networkid 777 --mine
+			# for miner (in new window)
+			# WARNING: CPU MINER NOT GOOD ANYMORE
+			# USE GPU MINER
+			geth attach
+			> personal.newAccount()
+			> miner.start()
+			# for GPU miner (after chain is synced)
+			# download ethminer
+			ethminer -G -P http://127.0.0.1:8545/
+			# or if you have friend with chain you can use their ip
+			# for RPC server, setup nginx
+			sudo apt-get install nginx
+			https://www.nginx.com/resources/wiki/start/topics/recipes/geth/
+		</pre>
+	</body>
 </html>

@@ -73,7 +73,8 @@ img.sm {
     border-width: 0 10px 10px 0;
     display: none;
     padding: 10px;
-
+    position: absolute;
+    top: 90%;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 
