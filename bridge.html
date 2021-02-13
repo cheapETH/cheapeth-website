@@ -1,0 +1,62 @@
+<html>
+<head>
+<style>
+pre {
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1em 0;
+  width: 600px;
+  white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<pre>
+The crowning jewel of the cheapETH project will be the bridge, which allows secure decentralized transfer of information and value between the cheapETH chain and the eth chain. Note, this is an extremely early draft and subject to change and have many bugs.
+
+Since cheapETH is cheap (0.1% of the high value asset), the transfer is not symmetric. Different considerations much be given to the send from high value to low value chain and the send from low value to high value.
+
+The goal would be for anyone to be able to run "bridge", connect the two chains, and earn some network fees from users of the bridge for doing so.
+
+
+== ETH -> cheapETH -- deposit ==
+
+This direction (high to low value) is comparatively easy. The current definition of ethereum is the longest PoW chain, and that proof of work can be checked in the cheapETH chain.
+
+Since cheapETH is cheap, all the block headers from L1 can be imported into a cheapETH contract. Chain reorgs are fine, as you'll be able to submit the longer chain to the contract, and the contract can validate that the longer chain is longer, and therefore the real chain. This L1 state contract can be kept up to date by "bridge", and anyone can submit the L1 chain block headers.
+
+While they could submit anything as block headers, the real ethereum chain would quickly win, since generating a fake ethereum chain with valid proof of work is extremely expensive. 
+
+See https://docs.keep.network/tbtc/appendix/spv/#_stateless_spv
+
+To send an asset (deposit), you would first lock it up on L1, wait a few blocks for that state to be confirmed on L2 (same as depositing into a centralized exchange), then unlock it on L2. Since attacking this would require attacking the entire L1 chain, and the L1 chain is way more valuable than L2, an attack is unprofitable.
+
+
+== cheapETH -> ETH -- withdraw ==
+
+This direction is different, as the L1 -> L2 assumes attacking L1 to control L2 is unprofitable. This is obviously not true the other way, attacking L2 to control L1 is very profitable, and we need to make sure it's impossible.
+
+The idea is to have an asset on L1 that secures the value on L2. A "governance token" on L1 would vote on the state hash of L2. While people may be concerned that one could gain 51% of the token and submit false state hashes, if the value of the token exceeds 2x the value of L2, this is unprofitable, as you'd destroy all the governance value by doing it.
+
+While other L2 systems can actually validate the state on L1, this is very expensive, since it requires the L2 blocks to be embedded in the L1 chain. Using a governance token bypasses this. And the governance token security model is well accepted in major projects, for example MKR secures DAI, aka if I had 51% of MKR, I could vote on a proposal to send me all the DAI. (do people know this?)
+
+See https://medium.com/coinmonks/how-to-turn-20m-into-340m-in-15-seconds-48d161a42311
+
+Token holders on L1 would automatically submit vote transactions using "bridge", and while these transactions are valid on L1, they can live on L2. When someone wants to "withdraw" from L2, they would lock their value on L2, and bundle these state vote transactions together and submit them to L1. With L1 having the state of L2 verified, using a merkle proof on the state you can validate that the value is locked in L2, and allow you to withdraw it on L1. 
+
+While the L1 submitter (withdrawer) could exclude vote transactions from this submission, and say, only including their own fake state, there would be a settlement period on L1. Bridge will challenge that submission with the excluded votes, and if the challenge wins, the fraudster would lose their L1 tokens they voting wrongly with, and they will be sent to the challenger. The honest get richer, the fraudulent lose money.
+
+Once the L2 state is settled in L1, it is the canonical state at that block for the L2 chain. This will require a slight change to cheapGETH, to not allow chain reorgs below a state hash "anchored" in L1. This also secures the value on L2 from large 51% attacks of the type seen on ethereum classic.
+
+
+== Conclusion ==
+
+Look, maybe this works, maybe it's simple. If people like it, I'll write it. If people don't, I won't. The crowdsale can decide.
+
+My plan would be to write the deposit portion pre crowdsale and sell both cheapETH (L2 asset) and cheapGOV (L1 token securing L2 value) in the crowdsale. If it goes well and we get paid, I'll write the harder withdraw half and cheapETH can live forever in the decentralized world of magic.
+
+There's no reason the long term store of value and the short term compute should be on the same chain. With ETH and cheapETH, we can separate these.
+
+Always remember, while other crypto goes to the moon, cheapETH stays on the Earth. For people to actually use. For short term value and compute, not long term value.
+
