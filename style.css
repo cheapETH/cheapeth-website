@@ -23,6 +23,7 @@ body {
     padding: 10px;
 }
 ul{
+    text-align: center;
     list-style-type: square;
     list-style-position: inside;
 }
@@ -49,6 +50,7 @@ a:active {
     color: rgb(136, 219, 136); 
 }
 
+
 img.sm {
     max-width: 200px;
     padding: 2.5;
@@ -67,13 +69,24 @@ img.sm {
     background-color: black;
     overflow: auto;
 }
+/* The animation code */
+@keyframes arrow {
+  0%, 5%, 95%, 100% {
+        top: 87%;
+    }
+    45%, 55% {
+        top: 90%;
+    }
+}
 
 #arrow {
     border: solid var(--main-accent-color);
     border-width: 0 10px 10px 0;
     display: none;
     padding: 10px;
-
+    position: absolute;
+    top: 90%;
+    animation: arrow 2s infinite;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 

@@ -7,3 +7,6 @@ window.onload = function() {
     var arrow = document.getElementById("arrow");
     arrow.onclick = displayDate;
 }
+
+
+
