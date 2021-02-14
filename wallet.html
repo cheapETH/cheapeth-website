@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>cheapETH</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar--wrapper">
+                <a class="navbar--logo" href="index.html">
+                    <div class="logo--image">
+                        <img src="images/logo.png">
+                    </div>
+                    <div class="logo--text">
+                        cheapETH
+                    </div>
+                </a>
+                <div class="navbar--items">
+                    <a class="navbar--item" href="bridge.html">Bridge spec</a>
+                    <a class="navbar--item active" href="wallet.html">Wallet</a>
+                    <a class="navbar--item" href="community-projects.html">Community projects</a>
+                    <a class="navbar--item" href="mining.html">Mining</a>
+                    <a class="navbar--item" href="whitepaper.pdf">Joke whitepaper</a>
+                </div>
+                
+                <img class="navbar--open-btn" onclick="openNavbar()" src="images/open.svg">
+                <img class="navbar--close-btn" onclick="closeNavbar()" src="images/close.svg">
+            </div>
+        </div>
+    </header>
+    <main> 
+        <div class="main">
+            <div class="main--wrapper">
+                <section>
+                    <p class="--p">To setup your cheapETH wallet follow these steps</p>
+                    <p class="--p">1.   Download and install Metamask <a href="https://metamask.io/download.html" target="_blank" class="--link">here</a>
+                        2.   Open network settings by clicking on “Ethereum Mainnet”
+                        3.   Select “Custom RPC”
+                        4.   Fill the form with the following data</p>
+                    <div class="code"> 
+                        <div class="code--wrapper">Network Name: cheapETH
+                            New RPC URL: https://node.cheapeth.org/rpc
+                            Chain ID: 777
+                            Currency Symbol: cTH
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer--wrapper">
+                <p class="--p">From some of the team that brought you bitcoin OCHO
+                    A Goku1997 project.
+                    
+                    © 2021 THE CHEAP ETHEREUM FOUNDATION
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

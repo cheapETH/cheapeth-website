@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>cheapETH</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar--wrapper">
+                <a class="navbar--logo" href="index.html">
+                    <div class="logo--image">
+                        <img src="images/logo.png">
+                    </div>
+                    <div class="logo--text">
+                        cheapETH
+                    </div>
+                </a>
+                <div class="navbar--items">
+                    <a class="navbar--item" href="bridge.html">Bridge spec</a>
+                    <a class="navbar--item" href="wallet.html">Wallet</a>
+                    <a class="navbar--item" href="community-projects.html">Community projects</a>
+                    <a class="navbar--item active" href="mining.html">Mining</a>
+                    <a class="navbar--item" href="whitepaper.pdf">Joke whitepaper</a>
+                </div>
+                
+                <img class="navbar--open-btn" onclick="openNavbar()" src="images/open.svg">
+                <img class="navbar--close-btn" onclick="closeNavbar()" src="images/close.svg">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="main--wrapper">
+                <section>
+                    <p class="--p">Create a 600GB storage optimized digital ocean droplet (32 GB ram, 4 CPU)</p>
+                    <p class="--p">Create a user</p>
+                    <div class="code">
+                        <div class="code--wrapper">adduser goku
+                            sudo visudo
+                            # goku ALL=(ALL) NOPASSWD:ALL
+                        </div>
+                    </div>
+                    <div class="code">
+                        <div class="code--wrapper">su goku
+                            cd ~/
+                            mkdir ~/.ssh
+                            cat > ~/.ssh/authorized_keys
+                        </div>
+                    </div>
+                    <div class="code">
+                        <div class="code--wrapper">wget https://raw.githubusercontent.com/geohot/configuration/master/.tmux.conf
+                            git clone https://github.com/geohot/go-ethereum.git -b cheapeth
+                            cd go-ethereum
+                            sudo apt install make golang-go
+                            make geth
+                        </div>
+                    </div>
+                    <div class="code">
+                        <div class="code--wrapper">./build/bin/geth --syncmode fast --cache 26000 --rpc --rpcaddr 127.0.0.1 --rpcapi eth,web3,debug,net --rpcvhosts=* --networkid 777 --mine
+                        </div>
+                    </div>
+                    <p class="--p">For miner (in new window)
+                        WARNING: CPU MINER NOT GOOD ANYMORE
+                        USE GPU MINER
+                    </p>
+                    <div class="code">
+                        <div class="code--wrapper">geth attach
+                            > personal.newAccount()
+                            > miner.start()                            
+                        </div>
+                    </div>
+                    <p class="--p">For GPU miner (after chain is synced) download ethminer
+                    </p>
+                    <div class="code">
+                        <div class="code--wrapper">ethminer -G -P http://127.0.0.1:8545/
+                        </div>
+                    </div>
+                    <p class="--p">or if you have friend with chain you can use their ip
+                    </p>
+                    <p class="--p">For RPC server, setup nginx
+                    </p>
+                    <div class="code">
+                        <div class="code--wrapper">sudo apt-get install nginx
+                            https://www.nginx.com/resources/wiki/start/topics/recipes/geth/
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer--wrapper">
+                <p class="--p">From some of the team that brought you bitcoin OCHO
+                    A Goku1997 project.
+                    
+                    © 2021 THE CHEAP ETHEREUM FOUNDATION
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
