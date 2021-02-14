@@ -169,6 +169,8 @@ section {
 
     bottom: 0;
 
+    z-index: 1;
+
     max-width: var(--maxWidth);
 
     background-color: var(--wrapperColor);
@@ -206,6 +208,8 @@ section {
 
         top: 86px;
         right: 0;
+
+        z-index: 2;
 
         flex-direction: column;
         align-items: center;
