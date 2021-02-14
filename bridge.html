@@ -45,7 +45,7 @@ See https://medium.com/coinmonks/how-to-turn-20m-into-340m-in-15-seconds-48d161a
 
 Token holders on L1 would automatically submit vote transactions using "bridge", and while these transactions are valid on L1, they can live on L2. When someone wants to "withdraw" from L2, they would lock their value on L2, and bundle these state vote transactions together and submit them to L1. With L1 having the state of L2 verified, using a merkle proof on the state you can validate that the value is locked in L2, and allow you to withdraw it on L1. 
 
-While the L1 submitter (withdrawer) could exclude vote transactions from this submission, and say, only including their own fake state, there would be a settlement period on L1. Bridge will challenge that submission with the excluded votes, and if the challenge wins, the fraudster would lose their L1 tokens they voting wrongly with, and they will be sent to the challenger. The honest get richer, the fraudulent lose money.
+While the L1 submitter (withdrawer) could exclude vote transactions from this submission, and say, only including their own fake state, there would be a settlement period on L1. Bridge will challenge that submission with the excluded votes, and if the challenge wins, the fraudster would lose their L1 tokens they voted wrongly with, and those token will be sent to the challenger. The honest get richer, the fraudulent lose money.
 
 Once the L2 state is settled in L1, it is the canonical state at that block for the L2 chain. This will require a slight change to cheapGETH, to not allow chain reorgs below a state hash "anchored" in L1. This also secures the value on L2 from large 51% attacks of the type seen on ethereum classic.
 
