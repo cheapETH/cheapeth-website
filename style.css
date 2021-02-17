@@ -1,7 +1,7 @@
 :root {
-  --main-accent-color: rgb(247, 78, 78);
-  --main-accent-color-muted: rgb(168, 0, 0);
-  --main-highlight-color: rgb(255, 158, 158);
+    --main-accent-color: rgb(247, 78, 78);
+    --main-accent-color-muted: rgb(168, 0, 0);
+    --main-highlight-color: rgb(255, 158, 158);
 }
 
 
@@ -102,7 +102,7 @@ img.sm {
 
 @media only screen and (min-width: 800px) {
     #arrow {
-         display: inline-block;
+        display: inline-block;
     }
     .landing {
         height: 100vmin;
