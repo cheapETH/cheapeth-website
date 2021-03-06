@@ -56,7 +56,9 @@
 </div>
 
 <h2>LIVE NOW ON METAMASK<br/>
-(<a href=metamask.html>instructions to add cheapnet network</a>)</h2>
+<button id="addNow">Click to add</button>
+<br/>
+(<a href=metamask.html>instructions to add cheapnet network manually</a>)</h2>
 <h2>
 Network Name: cheapETH<br />
 New RPC URL: https://node.cheapeth.org/rpc<br />
@@ -157,6 +159,49 @@ A Goku1997 project.
 &copy;
 <span id="copyright">
 <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+<script>
+  // Add to metamask
+  const btn = document.querySelector('#addNow');
+  const connectionParam = {
+    chainId: '0x' + (777).toString(16),
+    chainName: 'cheapETH',
+    nativeCurrency: {
+      name: 'cheapETH',
+      symbol: 'cTH',
+      decimals: 18
+    },
+    rpcUrls: [
+      'https://node.cheapeth.org/rpc',
+    ],
+    blockExplorerUrls: [
+      'https://explore.cheapswap.io/',
+    ]
+  }
+  btn.onclick = () => {
+    if(typeof window.ethereum === 'undefined') {
+      btn.innerHTML = 'Metamask not installed';
+      return;
+    }
+
+    if(window.ethereum.chainId === '0x309') {
+      btn.innerHTML = 'Already on the chain';
+      return;
+    }
+    
+    btn.innerHTML = 'Adding the network...';
+    window.ethereum.request({
+      method: 'wallet_addEthereumChain',
+      params: [ connectionParam ],
+    }).then(r => {
+      if(r === null) {
+        btn.innerHTML = 'Added sucsessfully';
+      } else {
+        btn.innerHTML = 'Something went wrong';
+        console.error(r);
+      }
+    })
+  }
+</script>
 </span>
 THE CHEAP ETHEREUM FOUNDATION<br/>
 0xa78e0A554736267cf7a1022C4c22b810221Ff613

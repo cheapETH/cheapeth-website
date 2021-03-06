@@ -114,3 +114,17 @@ img.sm {
     text-align: left;
     display: inline-block;
 }
+
+#addNow {
+    font-family: inherit;
+    padding: 1rem;
+    margin: 1rem;
+    width: 16%;
+    max-width: 16%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: var(--main-accent-color-muted);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
