@@ -59,6 +59,9 @@ https://www.nginx.com/resources/wiki/start/topics/recipes/geth/
 sudo apt-get install python3-certbot-nginx
 sudo certbot --nginx -d rpc.cheapeth.org
 
+# for reliable RPC endpoint
+while true; do echo "Restarting..."; sleep 1; ./build/bin/geth --syncmode fast --cache 26000 --rpc --rpcaddr 127.0.0.1 --rpcapi eth,web3,net --rpcvhosts=* --rpccorsdomain "*" --networkid 777; done
+
 </pre>
   </body>
 </html>
