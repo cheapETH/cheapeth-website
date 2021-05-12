@@ -128,3 +128,14 @@ img.sm {
     color: #fff;
     cursor: pointer;
 }
+.body {
+    text-align: center;
+}
+.body > pre {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.l2 > pre {
+    margin-top: 2em;
+}
