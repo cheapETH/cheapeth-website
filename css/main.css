@@ -1,0 +1,709 @@
+/* ----------------------------------
+
+Name: main.css
+Version: 1.0
+
+-------------------------------------
+
+Table of contents
+
+    00. Framework   
+    01. Navbar
+    02. Slider
+    03. Features
+    04. Get Started
+    05. Video
+    06. Portfolio
+    07. Our Team
+    08. Testimonials
+    09. Price Table
+    10. Contact
+    11. Footer
+    12. Page Loading
+    13. Media Query
+*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fbfffe;
+}
+
+/*--------------------------------------------------
+[0.Framework]
+--------------------------------------------------*/
+/* Typograpy */
+.h1-w { font-size: 40px; color: #ffffff; font-weight: 700; line-height: 50px; padding: 0; margin: 0;}
+.h2 { font-size: 30px; color: #3f4451; font-weight: 600; line-height: 40px; margin: 0; padding: 0;}
+.h2-w { font-size: 25px; font-weight: 700; margin: 0; padding: 0; color: #ffffff;}
+.p-17-w { font-size: 17px; font-weight: 400; margin: 0; padding: 0; color: #ffffff;}
+.h3-bk { font-size: 17px; font-weight: 700; color: #222d39; margin: 0; padding: 0;}
+.h3-blk-sb { font-size: 18px; font-weight: 600; color: #222d39; margin: 0; padding: 0;}
+.p-w { font-size: 15px; font-weight: 400; color: #ffffff; line-height: 30px; margin: 0; padding: 0;}
+.p-bk { font-size: 15px; font-weight: 400; color: #677294; line-height: 30px; margin: 0; padding: 0;}
+.span-sm { font-size: 14px; font-weight: 300; color: #677294; margin: 0; padding: 0;}
+/* Padding & Margin */
+.mb-20 { margin-bottom: 20px;}
+.mb-30 { margin-bottom: 30px;}
+.mt-60 { margin-top: 60px;}
+.mt-25 { margin-top: 25px;}
+.m-section-120 {margin: 120px 0;}
+.mb-120 { margin-bottom: 120px;}
+.mb-15 { margin-bottom: 15px;}
+.mt-20 { margin-top: 20px;}
+.mt-15 { margin-top: 25px;}
+.mb-40 { margin-bottom: 40px;}
+.mb-60 { margin-bottom: 60px;}
+.w-80 { width: 200px;}
+/* Box Shadow */
+.bx-shw { box-shadow: 0px 2px 25px 0px rgba(0,0,0,0.15); }
+/* Buttons */
+.btn-white {
+    background: #ffffff;
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #5040a0;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+}
+.btn-white:hover {
+    transform: translateY(-10px);
+    color: #222d39;
+}
+a {
+    text-decoration: none !important;
+}
+.btn-color {
+    background-image: linear-gradient(-100deg, #604AE6 0%, #E73D59 100%);
+    box-shadow: 1px 1px 25px 0px rgba(182,147,199,0.17);
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+}
+.btn-color:hover {
+    color: #ffffff;
+    transform: translateY(-10px);
+}
+/* Animation */
+.upDown {
+    animation: up-down 2s infinite;
+}
+@keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+/*--------------------------------------------------
+[1. Start Navbar]
+--------------------------------------------------*/
+.navbar {
+    padding: 20px 0;
+    background: linear-gradient(135deg, rgba(22, 37, 43, 0) 0%, rgba(22, 37, 43, 0) 100%);
+}
+.navbar .nav-item {
+    padding: 0;
+    margin: 0;
+}
+.navbar .nav-item .nav-link {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 30px;
+}
+
+.navbar .navbar-brand img {
+    max-width: 25px;
+}
+
+
+/*--------------------------------------------------
+[2. Start Slider]
+--------------------------------------------------*/
+.slider {
+    background-image: linear-gradient(-100deg, #604AE6 0%, #E73D59 100%);
+    height: 100vh;
+    position: relative;
+}
+
+#particles-js{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+  }
+
+  /*--------------------------------------------------
+[3. Start Features]
+--------------------------------------------------*/
+.features {
+    background: #f6f5fb;
+    padding: 120px 0;
+}
+
+  /*--------------------------------------------------
+[4. Start Get Started]
+--------------------------------------------------*/
+.get-started {
+    background: url(../img/bg/get-started-bg.png) center center no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 120px 0;
+}
+
+/*--------------------------------------------------
+[5. Start Video]
+--------------------------------------------------*/
+.video {
+    background: url("../img/bg/video-bg.png") center center no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+}
+.video-icon .icon {
+    background: #ffffff;
+    color: #E73D59;
+    display: inline;
+    font-size: 20px;
+    padding: 22px 28px;
+    border-radius: 200px;
+    position: relative;
+}
+
+/* Pulse Animation */
+.pulse {
+    animation: pulse 1s infinite;
+    animation-duration: 2s;
+}
+
+/* Keyframes */
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 50px rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 50px rgba(255, 255, 255, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+/*--------------------------------------------------
+[6. Start Portfolio]
+--------------------------------------------------*/
+.portfolio .single-portfolio-item {
+    position: relative;
+    padding: 0;
+}
+
+.portfolio .single-portfolio-item .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    color: #333333;
+    opacity: 0;
+    transition: all 0.7s ease-in-out;
+}
+
+.portfolio .single-portfolio-item .overlay .content {
+    font-size: 20px;
+    position: absolute;
+    text-decoration: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #ffffff;
+    transition: all 0.2s ease-in;
+
+}
+
+.portfolio .single-portfolio-item .overlay .content h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #444444;
+    padding: 0;
+    margin: 0;
+}
+
+.portfolio .single-portfolio-item .overlay .content p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #E73D59;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.portfolio .single-portfolio-item .overlay .content a {
+    color: #555555;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.portfolio .single-portfolio-item:hover .overlay {
+    opacity: 0.95;
+}
+
+
+/*--------------------------------------------------
+[7. Start Our Team]
+--------------------------------------------------*/
+.team .box {
+    position: relative;
+    border-radius: 15px;
+}
+.team .box .overlay {
+    position: absolute;
+    background-image: linear-gradient(-100deg, #604AE6 0%, #E73D59 100%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+.team .box:hover .overlay {
+opacity: .99;
+}
+.team .box .overlay .social {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 80px;
+    transform: translate(-50%,-50%);
+    padding: 15px 25px;
+    border-radius: 50px;
+    background: #ffffff;
+    width: 60%;
+    opacity: 0;
+    transition: all .4s ease-in-out
+}
+.team .box:hover .social {
+    opacity: 1;
+    margin-top: 0;
+}
+.team .box .overlay .social a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.team .box .overlay .social .icon {
+    font-size: 20px;
+    text-decoration: none;
+    color: #8c8b8f;
+    padding: 0 5px;
+    transition: all .4s ease-in-out;
+}
+.team .box .overlay .social .icon:hover {
+    color: #E73D59;
+}
+.team .box .info {
+    padding: 25px 0;
+}
+
+/*--------------------------------------------------
+[8. Start Testimonials]
+--------------------------------------------------*/
+.testimonials {
+    padding: 120px 0 150px;
+    background: url("../img/bg/testimonials.png") center center no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+.testimonials .carousel-item h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0 6px;
+}
+.testimonials .carousel-item h4 {
+    font-size: 13px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+.testimonials .carousel-item p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 26px;
+    margin-top: 15px;
+}
+.testimonials .carousel-indicators {
+    bottom: -40px;
+}
+.testimonials .carousel-indicators li {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    height: 12px;
+    width: 12px;
+    margin: 0 6px;
+}
+.testimonials .carousel-indicators .active {
+    background-color: #ffffff;
+}
+.testimonials .control span {
+    cursor: pointer;
+    margin-top: 150px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #E73D59;
+    background: #ffffff;
+    font-size: 20px;
+    box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.06);
+    opacity: 1 !important;
+}
+
+/*--------------------------------------------------
+[9. Start Price Table]
+--------------------------------------------------*/
+.price .box {
+    border-radius: 15px;
+    padding: 50px 0;
+}
+.price .box h4 {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+}
+.price .box h4 span {
+    font-size: 16px;
+}
+.price .box h5 {
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #757575;
+    margin: 0;
+    padding: 0;
+}
+.price .box ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+.price .box ul li {
+    font-size: 16px;
+    font-weight: 400;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #677294;
+    margin-bottom: 10px;
+}
+
+/*--------------------------------------------------
+[10. Start Contact]
+--------------------------------------------------*/
+.contact {
+    background: url('../img/bg/contact.png') center center no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+}
+.contact .heading {
+    margin-bottom: 50px;
+}
+.contact .heading h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #444a57;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.contact .heading p {
+    font-size: 16px;
+    color: #888d99;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0;
+}
+.contact .form-control {
+    padding: 25px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    background: #ffffff;
+    border: 0;
+    border-radius: 10px;
+}
+
+.contact button.btn {
+    box-shadow: 0px 15px 51px 0px rgba(0,0,0,0.24);
+    padding: 10px 45px;
+    border-radius: 45px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .4s ease-in-out;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-image: linear-gradient(-100deg, #604AE6 0%, #E73D59 100%);
+    color: #ffffff;
+}
+
+/*--------------------------------------------------
+[11. Start Footer]
+--------------------------------------------------*/
+.footer {
+    background-image: linear-gradient(-100deg, #604AE6 0%, #E73D59 100%);
+    padding: 40px 0;
+}
+.footer h2 {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 20px;
+}
+
+footer img {
+    max-width: 25px;
+}
+
+
+/*--------------------------------------------------
+[12. Start Page Loading]
+--------------------------------------------------*/
+.no-js #loader {
+    display: none;
+}
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+.se-pre-con {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url("../img/loader/preloader.svg") center no-repeat #fff;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .navbar {
+        background-image: linear-gradient(-100deg, #604AE6 0%, #E73D59 100%) !important;
+        padding:30px;
+    }
+    .navbar .nav-item {
+        margin: 0;
+        padding: 0;
+        margin: 10px 0;
+    }
+    .navbar .nav-item .nav-link {
+        margin: 0;
+    }
+    .slider {
+        height: auto;
+        padding: 160px 0 120px 0;
+        text-align: center;
+    }
+    .slider .text {
+        margin-bottom: 50px;
+    }
+    .slider .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about {
+        text-align: center;
+    }
+    .about .image {
+        margin-bottom: 50px;
+    }
+    .features {
+        text-align: center;
+        padding: 120px 0 80px 0; 
+    }
+    .features .box {
+        margin-bottom: 40px;
+    }
+    .about .work-img {
+        margin: 0;
+        margin-top: 50px;
+    }
+    .benefits {
+        margin-bottom: 80px;
+    }
+    .benefits .box {
+        margin-bottom: 40px;
+    }
+    .team {
+        margin-bottom: 80px;
+    }
+    .team .box {
+        margin-bottom: 40px;
+    }
+    .team .content img {
+        width: 100%;
+    }
+    .testimonials .control {
+        display: none;
+    }
+    .price {
+        margin-bottom: 80px;
+    }
+    .price .box {
+        margin-bottom: 40px;
+    }
+ }
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .navbar {
+        background-image: linear-gradient(-100deg, #604AE6 0%, #E73D59 100%) !important;
+        padding:30px;
+    }
+    .navbar .nav-item {
+        margin: 0;
+        padding: 0;
+        margin: 10px 0;
+    }
+    .navbar .nav-item .nav-link {
+        margin: 0;
+    }
+    .slider {
+        height: auto;
+        padding: 160px 0 120px 0;
+        text-align: center;
+    }
+    .slider .text {
+        margin-bottom: 50px;
+    }
+    .slider .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about {
+        text-align: center;
+    }
+    .about .image {
+        margin-bottom: 50px;
+    }
+    .features {
+        text-align: center;
+        padding: 120px 0 80px 0; 
+    }
+    .features .box {
+        margin-bottom: 40px;
+    }
+    .about .work-img {
+        margin: 0;
+        margin-top: 50px;
+    }
+    .benefits {
+        margin-bottom: 80px;
+    }
+    .benefits .box {
+        margin-bottom: 40px;
+    }
+    .team {
+        margin-bottom: 80px;
+    }
+    .team .box {
+        margin-bottom: 40px;
+    }
+    .team .content img {
+        width: 100%;
+    }
+    .testimonials .control {
+        display: none;
+    }
+    .price {
+        margin-bottom: 80px;
+    }
+    .price .box {
+        margin-bottom: 40px;
+    }
+ }
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .navbar {
+        background-image: linear-gradient(-100deg, #604AE6 0%, #E73D59 100%) !important;
+        padding:30px;
+    }
+    .navbar .nav-item {
+        margin: 0;
+        padding: 0;
+        margin: 10px 0;
+    }
+    .navbar .nav-item .nav-link {
+        margin: 0;
+    }
+    .slider {
+        height: auto;
+        padding: 160px 0 120px 0;
+        text-align: center;
+    }
+    .slider .text {
+        margin-bottom: 50px;
+    }
+    .slider .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about {
+        text-align: center;
+    }
+    .about .image {
+        margin-bottom: 50px;
+    }
+    
+    .about .work-img {
+        margin: 0;
+        margin-top: 50px;
+    }
+    .team {
+        margin-bottom: 80px;
+    }
+    .team .box {
+        margin-bottom: 40px;
+    }
+    .team .content img {
+        width: 100%;
+    }
+    
+    .testimonials .control {
+        display: none;
+    }
+    .price {
+        margin-bottom: 80px;
+    }
+    .price .box {
+        margin-bottom: 40px;
+    }
+ }
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { }
