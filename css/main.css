@@ -184,52 +184,7 @@ a {
     position: relative;
     border-radius: 15px;
 }
-.team .box .overlay {
-    position: absolute;
-    background-image: linear-gradient(-100deg, #604AE6 0%, #E73D59 100%);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    opacity: 0;
-    transition: all .4s ease-in-out;
-}
-.team .box:hover .overlay {
-opacity: .99;
-}
-.team .box .overlay .social {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: 80px;
-    transform: translate(-50%,-50%);
-    padding: 15px 25px;
-    border-radius: 50px;
-    background: #ffffff;
-    width: 60%;
-    opacity: 0;
-    transition: all .4s ease-in-out
-}
-.team .box:hover .social {
-    opacity: 1;
-    margin-top: 0;
-}
-.team .box .overlay .social a {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
-.team .box .overlay .social .icon {
-    font-size: 20px;
-    text-decoration: none;
-    color: #8c8b8f;
-    padding: 0 5px;
-    transition: all .4s ease-in-out;
-}
-.team .box .overlay .social .icon:hover {
-    color: #E73D59;
-}
+
 .team .box .info {
     padding: 25px 0;
 }
