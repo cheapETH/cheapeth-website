@@ -7,9 +7,6 @@ $(document).ready(function(){
 
     // Smooth Scrolling
     $('html').smoothScroll(800);
-    //Image Light Box Popup
-    $('.image-link').magnificPopup({type: 'image'});
-    $('.video-link').magnificPopup({type: 'iframe'});
 
     // Show Navbar background on scroll
     $(window).scroll(function(){
