@@ -16,6 +16,7 @@ const connectionParam = {
     ]
 }
 btn.onclick = () => {
+    event.preventDefault()
     if (typeof window.ethereum === 'undefined') {
         btn.innerHTML = 'Metamask not installed';
         return;
