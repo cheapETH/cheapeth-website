@@ -1,0 +1,371 @@
+/* ----------------------------------
+
+Name: main.css
+Version: 1.0
+
+-------------------------------------
+
+Table of contents
+
+    00. Framework   
+    01. Navbar
+    02. Slider
+    03. Features
+    04. Get Started
+    05. Video
+    06. Portfolio
+    07. Our Team
+    08. Testimonials
+    09. Price Table
+    10. Contact
+    11. Footer
+    12. Page Loading
+    13. Media Query
+*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fbfffe;
+}
+
+/*--------------------------------------------------
+[0.Framework]
+--------------------------------------------------*/
+/* Typograpy */
+.h1-w { font-size: 40px; color: #ffffff; font-weight: 700; line-height: 50px; padding: 0; margin: 0;}
+.h2 { font-size: 30px; color: #3f4451; font-weight: 600; line-height: 40px; margin: 0; padding: 0;}
+.h2-w { font-size: 25px; font-weight: 700; margin: 0; padding: 0; color: #ffffff;}
+.p-17-w { font-size: 17px; font-weight: 400; margin: 0; padding: 0; color: #ffffff;}
+.h3-bk { font-size: 17px; font-weight: 700; color: #222d39; margin: 0; padding: 0;}
+.h3-blk-sb { font-size: 18px; font-weight: 600; color: #222d39; margin: 0; padding: 0;}
+.p-w { font-size: 15px; font-weight: 400; color: #ffffff; line-height: 30px; margin: 0; padding: 0;}
+.p-bk { font-size: 15px; font-weight: 400; color: #677294; line-height: 30px; margin: 0; padding: 0;}
+.span-sm { font-size: 14px; font-weight: 300; color: #677294; margin: 0; padding: 0;}
+/* Padding & Margin */
+.mb-20 { margin-bottom: 20px;}
+.mb-30 { margin-bottom: 30px;}
+.mt-60 { margin-top: 60px;}
+.mt-25 { margin-top: 25px;}
+.m-section-120 {margin: 120px 0;}
+.mb-120 { margin-bottom: 120px;}
+.mb-15 { margin-bottom: 15px;}
+.mt-20 { margin-top: 20px;}
+.mt-15 { margin-top: 25px;}
+.mb-40 { margin-bottom: 40px;}
+.mb-60 { margin-bottom: 60px;}
+.w-80 { width: 200px;}
+/* Box Shadow */
+.bx-shw { box-shadow: 0px 2px 25px 0px rgba(0,0,0,0.15); }
+/* Buttons */
+.btn-white {
+    background: #ffffff;
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #5040a0;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+}
+.btn-white:hover {
+    transform: translateY(-10px);
+    color: #222d39;
+}
+a {
+    text-decoration: none !important;
+}
+.btn-color {
+    background-image: linear-gradient(-100deg, #604AE6 0%, #E73D59 100%);
+    box-shadow: 1px 1px 25px 0px rgba(182,147,199,0.17);
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+}
+.btn-color:hover {
+    color: #ffffff;
+    transform: translateY(-10px);
+}
+/* Animation */
+.upDown {
+    animation: up-down 2s infinite;
+}
+@keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+/*--------------------------------------------------
+[1. Start Navbar]
+--------------------------------------------------*/
+.navbar {
+    padding: 20px 0;
+    background: linear-gradient(135deg, rgba(22, 37, 43, 0) 0%, rgba(22, 37, 43, 0) 100%);
+}
+.navbar .nav-item {
+    padding: 0;
+    margin: 0;
+}
+.navbar .nav-item .nav-link {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 30px;
+}
+
+.navbar .navbar-brand img {
+    max-width: 25px;
+}
+
+
+/*--------------------------------------------------
+[2. Start Slider]
+--------------------------------------------------*/
+.slider {
+    background-image: linear-gradient(-100deg, #604AE6 0%, #E73D59 100%);
+    height: 100vh;
+    position: relative;
+}
+
+#particles-js{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+/* Keyframes */
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 50px rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 50px rgba(255, 255, 255, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+/*--------------------------------------------------
+[7. Start How to]
+--------------------------------------------------*/
+#svg-mining {
+    max-width: 200px;
+}
+
+#svg-coin {
+    max-width: 120px;
+}
+
+#svg-misc {
+    max-width: 200px;
+}
+
+/*--------------------------------------------------
+[7. Start Our Team]
+--------------------------------------------------*/
+.team .box {
+    position: relative;
+    border-radius: 15px;
+}
+
+.team .box .info {
+    padding: 25px 0;
+}
+
+.team-img {
+    width: 150px;
+    height: 150px;
+}
+
+/*--------------------------------------------------
+[11. Start Footer]
+--------------------------------------------------*/
+.footer {
+    background-image: linear-gradient(-100deg, #604AE6 0%, #E73D59 100%);
+    padding: 40px 0;
+}
+.footer h2 {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 20px;
+}
+
+footer img {
+    max-width: 25px;
+}
+
+
+/*--------------------------------------------------
+[12. Start Page Loading]
+--------------------------------------------------*/
+.no-js #loader {
+    display: none;
+}
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+.se-pre-con {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url("../img/loader/preloader.svg") center no-repeat #fff;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .navbar {
+        background-image: linear-gradient(-100deg, #604AE6 0%, #E73D59 100%) !important;
+        padding:30px;
+    }
+    .navbar .nav-item {
+        margin: 0;
+        padding: 0;
+        margin: 10px 0;
+    }
+    .navbar .nav-item .nav-link {
+        margin: 0;
+    }
+    .slider {
+        height: auto;
+        padding: 160px 0 120px 0;
+        text-align: center;
+    }
+    .slider .text {
+        margin-bottom: 50px;
+    }
+    .slider .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about {
+        text-align: center;
+    }
+    .about .image {
+        margin-bottom: 50px;
+    }
+    .team {
+        margin-bottom: 80px;
+    }
+    .team .box {
+        margin-bottom: 40px;
+    }
+    .team .content img {
+        width: 100px;
+        height: 100px;
+    }
+ }
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .navbar {
+        background-image: linear-gradient(-100deg, #604AE6 0%, #E73D59 100%) !important;
+        padding:30px;
+    }
+    .navbar .nav-item {
+        margin: 0;
+        padding: 0;
+        margin: 10px 0;
+    }
+    .navbar .nav-item .nav-link {
+        margin: 0;
+    }
+    .slider {
+        height: auto;
+        padding: 160px 0 120px 0;
+        text-align: center;
+    }
+    .slider .text {
+        margin-bottom: 50px;
+    }
+    .slider .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about {
+        text-align: center;
+    }
+    .about .image {
+        margin-bottom: 50px;
+    }
+    .team {
+        margin-bottom: 80px;
+    }
+    .team .box {
+        margin-bottom: 40px;
+    }
+    .team .content img {
+        width: 100px;
+        height: 100px;
+    }
+ }
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .navbar {
+        background-image: linear-gradient(-100deg, #604AE6 0%, #E73D59 100%) !important;
+        padding:30px;
+    }
+    .navbar .nav-item {
+        margin: 0;
+        padding: 0;
+        margin: 10px 0;
+    }
+    .navbar .nav-item .nav-link {
+        margin: 0;
+    }
+    .slider {
+        height: auto;
+        padding: 160px 0 120px 0;
+        text-align: center;
+    }
+    .slider .text {
+        margin-bottom: 50px;
+    }
+    .slider .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about {
+        text-align: center;
+    }
+    .about .image {
+        margin-bottom: 50px;
+    }
+    .team {
+        margin-bottom: 80px;
+    }
+    .team .box {
+        margin-bottom: 40px;
+    }
+    .team .content img {
+        width: 100px;
+        height: 100px;
+    }
+ }
