@@ -163,7 +163,7 @@ a {
 }
 
 /*--------------------------------------------------
-[7. Start How to]
+[3. Start How to]
 --------------------------------------------------*/
 #svg-mining {
     max-width: 200px;
@@ -178,24 +178,7 @@ a {
 }
 
 /*--------------------------------------------------
-[7. Start Our Team]
---------------------------------------------------*/
-.team .box {
-    position: relative;
-    border-radius: 15px;
-}
-
-.team .box .info {
-    padding: 25px 0;
-}
-
-.team-img {
-    width: 150px;
-    height: 150px;
-}
-
-/*--------------------------------------------------
-[11. Start Footer]
+[4. Start Footer]
 --------------------------------------------------*/
 .footer {
     background-image: linear-gradient(-100deg, #604AE6 0%, #E73D59 100%);
@@ -214,7 +197,7 @@ footer img {
 
 
 /*--------------------------------------------------
-[12. Start Page Loading]
+[5. Start Page Loading]
 --------------------------------------------------*/
 .no-js #loader {
     display: none;
@@ -268,16 +251,6 @@ footer img {
     .about .image {
         margin-bottom: 50px;
     }
-    .team {
-        margin-bottom: 80px;
-    }
-    .team .box {
-        margin-bottom: 40px;
-    }
-    .team .content img {
-        width: 100px;
-        height: 100px;
-    }
  }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -313,16 +286,6 @@ footer img {
     .about .image {
         margin-bottom: 50px;
     }
-    .team {
-        margin-bottom: 80px;
-    }
-    .team .box {
-        margin-bottom: 40px;
-    }
-    .team .content img {
-        width: 100px;
-        height: 100px;
-    }
  }
 
 /* Medium devices (tablets, less than 992px) */
@@ -357,15 +320,5 @@ footer img {
     }
     .about .image {
         margin-bottom: 50px;
-    }
-    .team {
-        margin-bottom: 80px;
-    }
-    .team .box {
-        margin-bottom: 40px;
-    }
-    .team .content img {
-        width: 100px;
-        height: 100px;
     }
  }
