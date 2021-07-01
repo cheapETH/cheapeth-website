@@ -177,6 +177,21 @@ a {
     max-width: 200px;
 }
 
+.video {
+    background: url("../img/bg/video-bg.png") center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 120px 0;
+    margin-bottom: 50px;
+}
+
+.youtube {
+    animation: pulse 1s infinite;
+    animation-duration: 2s;
+}
+
 /*--------------------------------------------------
 [4. Start Footer]
 --------------------------------------------------*/
