@@ -1,228 +1,311 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>cheapETH</title>
+        <!-- Google Font -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+            rel="stylesheet">
+        <!-- Bootstrap 4.2.1 -->
+        <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
+        <!-- Magnific Popup -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+        <!-- Font Awesome -->
+        <link
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet">
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel='icon' href='img/cth/favicon.ico' type='image/x-icon' sizes="16x16" />
+    </head>
+    <body>
+        <!-- Page Loading -->
+        <div class="se-pre-con"></div>
 
-<head>
-    <!-- Site Behavior tags -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ========== Start Navbar ========== -->
+        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#slider"><img src="img/cth/white_cth.svg" alt=""></a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#slider">Home
+                                <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tokenomics">Tokenomics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#metamask">Add to Metamask</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#howto">How to get cheapETH</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contributions">The project</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- ========== End Navbar ========== -->
 
-    <!-- Basic site info-->
-    <meta name="title" data-hid="title" content="cheapETH">
-    <meta name="description" data-hid="description" content="You like ethereum? You wish you could use it, BUT TRANSACTIONS ARE 100 FUCKING DOLLARS?!? You need cheapETH. It's 100% compatible with eth, except 1000x cheaper!!*" />
+        <!-- ========== Start Slider ========== -->
+        <section class="slider d-flex align-items-center" id="slider">
+            <div id="particles-js"></div>
+            <div class="container">
+                <div class="row d-flex align-items-center mt-60">
+                    <div class="col-lg-6">
+                        <div class="text">
+                            <h1 class="h1-w mb-20">You like ethereum? You wish you could use it, but transactions are 100 F**KING DOLLARS?!?</h1>
+                            <p class="p-w mb-30">You need cheapETH. It's 100% compatible with eth, except <strong>1000x</strong> cheaper!!!
+                                If you have ETH, you already have cheapETH!
+                            </p>
+                            <a href="https://discord.gg/r3WUGxzUH8" class="btn-white d-inline-block">Join our Discord server</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="image d-flex justify-content-lg-end">
+                            <img src="img/cth/cth_symbol.svg" alt="slider-phone" class="img-fluid upDown">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========== End Slider ========== -->
 
-    <!-- Open Graph (Facebook/Linkedin) tags -->
-    <!-- Testing tool: https://developers.facebook.com/tools/debug/ -->
-    <meta property="og:site_name" content="cheapETH">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:url" content="https://cheapeth.org">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="cheapETH">
-    <meta property="og:description" content="You like ethereum? You wish you could use it, BUT TRANSACTIONS ARE 100 FUCKING DOLLARS?!? You need cheapETH. It's 100% compatible with eth, except 1000x cheaper!!*">
-    <meta property="og:image" content="https://cheapeth.org/images/logo.png">
+        <!-- ========== Start Tokenomics ========== -->
+        <section class="about m-section-120" id="tokenomics">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-6">
+                        <div class="image pr-4">
+                            <img src="img/cth/baloon_cth.svg" alt="baloon" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="h2 mb-20">
+                            Tokenomics made easy
+                            <br>
+                            at scale</h2>
+                        <p class="p-bk mb-30">
+                            cheapETH is a fork of the main <a href="https://ethereum.org/en/">Ethereum</a> chain at block 11818959<br/>
+                            Think <a href="https://bitcoincash.org/">Bitcoin Cash</a>, but for Ethereum instead of Bitcoin<br/>
+                            The money is cheap, the transactions are fast, and the party is still going.<br/>
+                            Think about it. A transaction that costs $77 on ETH, is only $0.08 on cheapETH. Made possible by cheapgas.
+                            The cheap eth gang solves the gas crisis.
+                            * Imagine a 100% compatible car with your car that's 1000x cheaper. Or even a cup of coffee. You'll be living like a king in no time.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="h2 mb-20">
+                            Why cheapETH?
+                        </h2>
+                        <p class="p-bk mb-30">
+                            So aside from the fact that ETH is too expensive for normal people to use, cheapETH can serve many purposes.
+                            <br>
+                            Testnets suffer from this problem of valueless currency. You don't want valueless, since DDOS is free. Cheap is better than free.
+                            Testnets also lack a rich ecosystem of contracts. cheapETH also has cheapSNX, cheapDAI, and even cheapBAT. All is cheap on cheapETH.
+                            <br>
+                            You test in prod on cheapETH.
+                            You can be a little guy on cheapETH. This is not a whalechain, unlike other eths
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="image pr-4">
+                            <img src="img/cth/invest2.svg" alt="baloon" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="image pr-4">
+                            <img src="img/cth/treasure.svg" alt="baloon" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="h2 mb-20">
+                            Will it stay cheap?
+                        </h2>
+                        <p class="p-bk mb-30">
+                            cheapETH has a premine for dumping on speculators above 0.001 ETH/cTH
+                            Speculation is a tax, they buy for less and sell for more and remove money from the system.
+                            By warding off speculators, we can keep cheapETH cheap for actual use in doing trusted compute.<br/>
+                            cheapETH is for using and loving, not for speculating.<br/>
+                            <strong>
+                                "One day speculator will buy all the air<br/>
+                                not to breathe, only for hodl<br/>
+                                and everyone will suffocate<br/>
+                                and finally speculator will be sad"
+                            </strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========== End Tokenomics ========== -->
 
-    <!-- Twitter tags -->
-    <!-- Testing tool: https://cards-dev.twitter.com/validator -->
-    <meta name="twitter:site" content="https://cheapeth.org">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="cheapETH">
-    <meta name="twitter:description" content="You like ethereum? You wish you could use it, BUT TRANSACTIONS ARE 100 FUCKING DOLLARS?!? You need cheapETH. It's 100% compatible with eth, except 1000x cheaper!!*">
-    <meta name="twitter:image" content="https://cheapeth.org/images/logo.png">
-    <meta name="twitter:image:alt" content="cheapETH logo">
+        <!-- ========== Start Metamask ========== -->
+        <section class="metamask m-section-120" id="metamask">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="h2 mb-20">
+                            Add cheapETH to your Metamask
+                        </h2>
+                        <p class="p-bk mb-30">
+                            You can add cheapETH to your Metamask simply by clicking on the button below.
+                            If you have any problem, you can also manually setup your wallet using the following parameters:<br>
+                            <br>
+                            <strong class="text-center">Network Name: </strong>cheapETH<br>
+                            <strong>New RPC URL: </strong>https://node.cheapeth.org/rpc<br>
+                            <strong>Chain ID: </strong>777<br>
+                            <strong>Currency Symbol: </strong>cTH<br>
+                            <strong>Block Explorer URL: </strong>https://explore.cheapswap.io/<br>
+                        </p>
+                        <a href="#" class="btn-color d-inline-block" id="addNow">Click to add</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="image pr-4">
+                            <img src="img/cth/metamask.gif" alt="about" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========== End Metamask ========== -->
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/ico" href="images/favicon.ico" />
-    <script src="scripts.js"></script>
-    <title>cheapETH</title>
-</head>
-<body>
-<div class="landing">
-<div class="header">
-<a href="setup.html">Mining Guide</a>
-<a href="metamask.html">Wallet setup</a>
-<a href="bridge.html">Bridge Spec</a>
-<a href="whalegate.html">Whalegate</a>
-<a href="staycheap.html">Will it stay cheap?</a>
-</div>
-<img id="logo" src=images/logo.png alt="cheapETH logo"/>
+        <!-- ========== Start Video ========== -->
+        <section class="video" id="howto">
+            <div class="container text-center">
+                <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/whoTOKwdJW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <!-- ========== End Video ========== -->
 
-<br />
-<h3>You like ethereum? You wish you could use it, BUT TRANSACTIONS ARE <span class="emphasize">100</span> FUCKING DOLLARS?!?</h3>
-<h3>You need cheapETH. It's 100% compatible with eth, except <span class="emphasize">1000x</span> cheaper!!*</h3>
-<h3>If you have ETH, you already have cheapETH!</h3>
-<h3><a href="https://discord.gg/r3WUGxzUH8">Join the discord</a> for free cheapETH.<br /></h3>
-<i id="arrow"></i>
-</div>
+        <!-- ========== Start How to ========== -->
+        <section class="benefits mb-120">
+            <div class="container text-center">
+                <h2 class="h2 mb-15">How to get cheapETH</h2>
+                <p class="p-bk mb-60">
+                    If you had ETH in block <strong>11818959</strong>, you have cheapETH! A 1 to 1 ratio of course.
+                    <br>
+                    You can also <strong><a href="https://miningpoolstats.stream/cheapeth">mine cheapETH</a></strong>,
+                    beg for free cheapETH (join our <a href="https://discord.gg/r3WUGxzUH8">discord server</a>),
+                    buy cheapETH on exchange or using <a href="https://node.pool.cheap/getcth">paypal</a>.
+                </p>
+                <div class="row">
+                    <!-- Box-1 -->
+                    <div class="col">
+                        <div class="box">
+                            <img src="img/howto/mining.svg" id="svg-mining" alt="">
+                            <h3 class="h3-bk mb-20 mt-15">Mining pools</h3>
+                            <p class="p-bk">
+                                North America - <a href="http://na.pool.cheap/">na.pool.cheap</a>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Box-2 -->
+                    <div class="col">
+                        <div class="box">
+                            <img src="img/howto/coin.svg" id="svg-coin" alt="">
+                            <h3 class="h3-bk mb-20 mt-15">Free cTH</h3>
+                            <p class="p-bk">
+                                On our Discord server
+                                <br>
+                                <a href="https://discord.gg/r3WUGxzUH8">Join here</a>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Box-3 -->
+                    <div class="col">
+                        <div class="box">
+                            <img src="img/howto/miscellaneous.svg" id="svg-misc" alt="">
+                            <h3 class="h3-bk mb-20 mt-15">Miscellaneous</h3>
+                            <p class="p-bk">
+                                <a href="https://coinmarketcap.com/currencies/cheapeth/">CoinMarketCap</a>
+                                <br>
+                                <a href="https://exchange.centex.io/exchange/CTH-ETH">Centex CTH-ETH Exchange</a>
+                                <br>
+                                <a href="https://cethswap.com/">CethSwap.com - Swap BCH to CTH</a>
+                                <br>
+                                <a href="https://cheapswap.io/#/swap">CheapSwap</a>
+                                <br>
+                                <a href="https://geopogs.party/">geopogs.party - Collectible NFTs</a>
+                                <br>
+                                <a href="https://cheapmemes.club/">cheapmemes.club - fully centralized meme platform</a>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Box-4 -->
+                    <div class="col">
+                        <div class="box">
+                            <img src="img/howto/version_control.svg" id="svg-misc" alt="">
+                            <h3 class="h3-bk mb-20 mt-15">Development</h3>
+                            <p class="p-bk">
+                                Write and deploy your own contracts on the cheapnet using <a href="https://remix.ethereum.org/">remix</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========== End How to ========== -->
+        
+        <!-- ========== Start Contributions ========== -->
+        <section class="about m-section-120" id="contributions">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-6">
+                        <div class="image pr-4">
+                            <img src="img/cth/Octocat.png" alt="github-logo" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="h2 mb-20">Contribute to cheapETH</h2>
+                        <p class="p-bk mb-30">We are an open source project and if you want to contribute to cheapETH,
+                            here are our repositories. More fun and less gas fees!
+                        </p>
+                        <a href="https://github.com/CheapEthereum" class="btn-color d-inline-block">Our GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========== End Contributions ========== -->
 
-<h2>LIVE NOW ON METAMASK<br/>
-<button id="addNow">Click to add</button>
-<br/>
-(<a href=metamask.html>instructions to add cheapnet network manually</a>)</h2>
-<h2>
-Network Name: cheapETH<br />
-New RPC URL: https://rpc.cheapeth.org/rpc<br />
-Chain ID: 777<br />
-Currency Symbol: cTH<br />
-</h2>
+        <!-- ========== Start Footer ========== -->
+        <footer class="footer">
+            <div class="container text-center text-white">
+                <img src="img/cth/drawing-logo-500.png" alt="">
+                <h2>The Cheap Ethereum Foundation</h2>
+                <h2>Copyright © 2021. All Rights Reserved.</h2>
+            </div>
+        </footer>
+        <!-- ========== End Footer ========== -->
 
-<p>
-<a href="http://expedition.cheapeth.org/?rpcUrl=https://rpc.cheapeth.org/rpc">Block Explorer</a><br/>
-<a href="https://explore.cheapswap.io">Other Block Explorer</a></br>
-</p>
-
-<hr />
-<h3>What is cheapETH?</h3>
-<p>
-cheapETH is a fork of the main <a href="https://ethereum.org/en/">Ethereum</a> chain at block 11818959<br/>
-Think <a href="https://bitcoincash.org/">Bitcoin Cash</a>, but for Ethereum instead of Bitcoin<br/>
-The money is cheap, the transactions are fast, and the party is still going.<br/>
-</p>
-
-<hr />
-<h3>Community CheapETH projects</h3>
-<h4>Free cTH</h4>
-<a href="https://www.faucet.cheap/">CheapFaucet</a></br>
-<a href="https://cethswap.com">Raffle + faucet</a></br>
-<a href="twitter.html">Tweet for free cTH</a>
-<h4>Games</h4>
-<a href="https://button.cheapp.org/">cTHE Button</a></br>
-<a href="http://roulette.cheapp.org/">Roulette</a></br>
-<a href="https://cheapcrasher.com/">Cheap Crasher</a></br>
-<a href="https://rigwars.io/">RigWars Idle game</a></br>
-<a href="http://cth-flip.xyz/">Flip me off - Coinflip game</a></br>
-<a href="https://explore.cheapswap.io/account/0x2D0BbE7e56e7f9b1Dc3Fd3DF53D876da3c8786a2">Maybe Doubler (5cTH max bet, 50% win)</a></br>
-<a href="https://cheapcasino.xyz">cheapCasino.xyz - A full blown casino on the cheapETH chain</a></br>
-<h4>Mining pools</h4>
-<a href="https://pool.cethswap.com">pool.cethswap.com</a></br>
-<a href="http://cthpool.org">cthpool.org (0.2 % fee, multi-port, solo mining and nicehash supported)</a></br>
-<a href="http://cethpool.com">cethpool.com</a><br />
-<a href="http://eu.pool.cheap">eu.pool.cheap</a><br />
-<a href="http://na.pool.cheap">na.pool.cheap</a><br />
-<h4>Other</h4>
-<a href="https://coinmarketcap.com/currencies/cheapeth/">CoinMarketCap</a><br/>
-<a href="https://cheapswap.io">CheapSwap</a></br>
-<a href="https://github.com/Henistein/cheapBot">Discord Bot</a></br>
-<a href="https://exchange.centex.io/exchange/CTH-ETH">Centex CTH-ETH Exchange</a><br/>
-<a href="https://cethswap.com">CethSwap.com - Swap BCH to CTH</a><br/>
-<a href="https://geopogs.party">geopogs.party - Collectible NFTs</a><br/>
-<a href="https://cheapmemes.club/">cheapmemes.club - fully centralized meme platform</a></br>
-<a href="https://cheapestmemes.reverse-shell.com">cheapestmemes.reverse-shell.com - fully decentralized meme platform</a></br>
-<a href="https://cheapsea.io">cheapsea.io - like opensea but cheap</a></br>
-<a href="https://gerald.host/elon/">8 Bit Elon - like Elon NFTs but cheap</a></br>
-<a href="https://pumpndump.me/"> pumpNdump (pNd) Coin into the Ocean to stop the New Whal3 Orderwith cheapETH. The Dump is coming.</a></br>
-<a href="https://jadon-jesse.github.io/cheapGLoaT/">cheapGLoaT - Link aggregation system that rewards great links</a></br>
-<h4>Development</h4>
-<a href="https://remix.ethereum.org">Write and deploy your own contracts on the cheapnet using remix</a>
-<br/>
-<br/>
-
-<hr />
-<p id="info">
-Think about it. A transaction that costs $77 on ETH, is only $0.08 on cheapETH. Made possible by cheapgas.<br />
-The cheap eth gang solves the gas crisis.<br />
-* Imagine a 100% compatible car with your car that's 1000x cheaper. Or even a cup of coffee. You'll be living like a king in no time.<br />
-</p>
-
-<hr />
-<h3>How to get cheapETH</h3>
-<p>
-If you had ETH in block 11818959, you have cheapETH! A 1 to 1 ratio of course.<br />
-You can also mine cheapETH, beg for free cheapETH, or <a href=https://exchange.centex.io/exchange/CTH-ETH>buy cheapETH on exchange</a>.<br />
-
-<hr />
-<h3>Why cheapETH?</h3>
-<p>
-So aside from the fact that ETH is too expensive for normal people to use, cheapETH can serve many purposes.<br />
-<br />
-Testnets suffer from this problem of valueless currency. You don't want valueless, since DDOS is free. Cheap is better than free.<br />
-Testnets also lack a rich ecosystem of contracts. cheapETH also has cheapSNX, cheapDAI, and even cheapBAT. All is cheap on cheapETH.<br /><br/>
-
-You test in prod on cheapETH.<br/>
-You can be a little guy on cheapETH. This is not a whalechain, unlike other eths<br/>
-</p>
-
-<hr />
-<h3>Fuck Speculator</h3>
-<p>
-cheapETH has a premine for dumping on speculators above 0.001 ETH/cTH<br/>
-Speculation is a tax, they buy for less and sell for more and remove money from the system<br/>
-By warding off speculators, we can keep cheapETH cheap for actual use in doing trusted compute<br/>
-<br/>
-cheapETH is for using and loving, not for speculating<br/>
-<br/>
-one day speculator will buy all the air<br/>
-not to breathe, only for hodl<br/>
-and everyone will suffocate<br/>
-and finally speculator will be sad<br/>
-</p>
-
-<hr />
-<h3>How to join the cheapETH movement</h3>
-<p>
-<a href="https://discord.gg/r3WUGxzUH8">Join the discord</a><br />
-<a href="https://github.com/geohot/go-ethereum/tree/cheapeth">See the code</a> (we hired geohot to write it)<br />
-geth node setup <a href="setup.html">instructions here</a><br />
-cheapETH <a href="https://twitter.com/CheapETH">twitter</a>
-</p>
-
-<hr />
-<h3>The Team</h3>
-<p>
-From some of the team that brought you <a href="https://messari.io/asset/bitcoin-ocho/profile">bitcoin OCHO</a><br />
-A Goku1997 project.
-<div>
-&copy;
-<span id="copyright">
-<script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
-<script>
-  // Add to metamask
-  const btn = document.querySelector('#addNow');
-  const connectionParam = {
-    chainId: '0x' + (777).toString(16),
-    chainName: 'cheapETH',
-    nativeCurrency: {
-      name: 'cheapETH',
-      symbol: 'cTH',
-      decimals: 18
-    },
-    rpcUrls: [
-      'https://rpc.cheapeth.org/rpc',
-    ],
-    blockExplorerUrls: [
-      'https://explore.cheapswap.io/',
-    ]
-  }
-  btn.onclick = () => {
-    if(typeof window.ethereum === 'undefined') {
-      btn.innerHTML = 'Metamask not installed';
-      return;
-    }
-
-    if(window.ethereum.chainId === '0x309') {
-      btn.innerHTML = 'Already on the chain';
-      return;
-    }
-    
-    btn.innerHTML = 'Adding the network...';
-    window.ethereum.request({
-      method: 'wallet_addEthereumChain',
-      params: [ connectionParam ],
-    }).then(r => {
-      if(r === null) {
-        btn.innerHTML = 'Added successfully';
-      } else {
-        btn.innerHTML = 'Something went wrong';
-        console.error(r);
-      }
-    })
-  }
-</script>
-</span>
-THE CHEAP ETHEREUM FOUNDATION<br/>
-0xa78e0A554736267cf7a1022C4c22b810221Ff613
-</div>
-</p>
-
-</body>
-
+        <!-- ========== JS ========== -->
+        <script src="js/plugins/jquery-3.5.1.min.js"></script>
+        <script src="js/plugins/popper.min.js"></script>
+        <script src="js/plugins/bootstrap.min.js"></script>
+        <!-- Particels JS -->
+        <script src="js/plugins/particles.min.js"></script>
+        <script src="js/plugins/app.js"></script>
+        <!-- Smooth Scrolling -->
+        <script src="js/plugins/jquery.smoothscroll.min.js"></script>
+        <!-- Magnific Popup -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/plugins/metamask.js"></script>
+    </body>
 </html>
