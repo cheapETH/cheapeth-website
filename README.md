@@ -13,3 +13,4 @@ If you have ETH, you already have cheapETH!
 * New RPC URL: [https://node.cheapeth.org/rpc](https://node.cheapeth.org/rpc)
 * Chain ID: 777
 * Currency Symbol: cTH
+* Block Explorer URL: https://explore.cheapswap.io/
