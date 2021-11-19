@@ -13,6 +13,14 @@
       "symbol": "TWCH",
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/9956/thumb/dai-multi-collateral-mcd.png?1574218774"
+    },
+    {
+      "chainId": 777,
+      "address": "0x4AC1242106601F70BfDc4731D4EEAF7f7501B5Cd",
+      "name": "Party",
+      "symbol": "PTY",
+      "decimals": 18,
+      "logoURI": "https://msb111.github.io/party/party.png"
     }
   ],
   "version": {
